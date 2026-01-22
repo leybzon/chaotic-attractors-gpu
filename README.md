@@ -335,7 +335,7 @@ When switching between attractor types, velocities are smoothly blended over 120
 
 ## License
 
-[Specify your license here - MIT, GPL, Apache, etc.]
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
