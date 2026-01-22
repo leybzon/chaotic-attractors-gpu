@@ -344,8 +344,23 @@ Contributions welcome! Please open an issue or pull request.
 ## Citation
 
 If you use this code in research or publications, please cite:
+
+**BibTeX:**
+```bibtex
+@software{leybzon2026chaotic,
+  author = {leybzon},
+  title = {Chaotic Attractor Cinematic Visualizer},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/leybzon/chaotic-attractors-gpu},
+  version = {1.0.0}
+}
 ```
-[Your citation format here]
+
+**Plain text:**
+```
+leybzon. (2026). Chaotic Attractor Cinematic Visualizer (Version 1.0.0) [Computer software].
+GitHub. https://github.com/leybzon/chaotic-attractors-gpu
 ```
 
 ## Acknowledgments
