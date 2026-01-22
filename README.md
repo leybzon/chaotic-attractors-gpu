@@ -2,7 +2,7 @@
 
 GPU-accelerated cinematic visualization of chaotic attractors using OpenACC. Renders 2 million particles flowing through various attractor systems (Aizawa, Thomas, Lorenz, Halvorsen, Chen) with dynamic camera movement and velocity-based heatmap coloring.
 
-![Sample Output](examples/sample_output.mp4)
+**[▶️ View Sample Output Video](examples/sample_output.mp4)**
 
 ## Features
 
