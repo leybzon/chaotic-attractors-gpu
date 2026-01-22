@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 120 ./attractor_cinematic:*)",
+      "Bash(./attractor_cinematic:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(chmod:*)",
+      "Bash(nvc:*)",
+      "Bash(./generate_video.sh:*)",
+      "Bash(for zoom in 2.5 5.0 7.5 10)",
+      "Bash(do OUTPUT=\"zoom_tests/halvorsen_lowmin_$zoom.mp4\" CONFIG=\"zoom_tests/config_halvorsen_lowmin_$zoom.txt\" echo \"Generating $OUTPUT...\" ./generate_video.sh -n 6 -f 60 -s 3 -c \"$CONFIG\" -o \"$OUTPUT\" --preset ultrafast)",
+      "Bash(do OUTPUT=\"zoom_tests/chen_lowmin_$zoom.mp4\" CONFIG=\"zoom_tests/config_chen_lowmin_$zoom.txt\" echo \"Generating $OUTPUT...\" ./generate_video.sh -n 6 -f 60 -s 4 -c \"$CONFIG\" -o \"$OUTPUT\" --preset ultrafast)",
+      "Bash(ls:*)",
+      "Bash(do OUTPUT=\"zoom_tests/chen_v2_$zoom.mp4\" CONFIG=\"zoom_tests/config_chen_v2_$zoom.txt\" echo \"Generating $OUTPUT...\" ./generate_video.sh -n 6 -f 60 -s 4 -c \"$CONFIG\" -o \"$OUTPUT\" --preset ultrafast)",
+      "Bash(do OUTPUT=\"zoom_tests/halvorsen_v2_$zoom.mp4\" CONFIG=\"zoom_tests/config_halvorsen_v2_$zoom.txt\" echo \"Generating $OUTPUT...\" ./generate_video.sh -n 6 -f 60 -s 3 -c \"$CONFIG\" -o \"$OUTPUT\" --preset ultrafast)"
+    ]
+  }
+}

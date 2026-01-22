@@ -1,0 +1,25 @@
+# Compiled binary
+attractor_cinematic
+
+# Video outputs
+*.mp4
+!examples/sample_output.mp4
+
+# Frame extractions
+*.png
+
+# Logs and metadata
+chapters.txt
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Build artifacts
+*.o
+*.a
+
+# OS specific
+.DS_Store
+Thumbs.db

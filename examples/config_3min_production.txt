@@ -1,0 +1,18 @@
+# 3-minute production config with optimized zoom settings
+# Based on visual review of zoom_tests results
+
+# Per-attractor zoom multipliers
+aizawa=2.0
+thomas=1.0
+halvorsen=7.5
+chen=2.5
+
+# Global zoom parameters
+min_zoom=1.0
+initial_cam_scale=3.0
+max_zoom=2000.0
+
+# Screen fill and dynamics (from zoom_tests)
+screen_fill_factor=0.35
+zoom_oscillation=0.0
+dynamic_adjustment=0.0

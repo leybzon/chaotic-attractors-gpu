@@ -1,0 +1,58 @@
+# Attractor Cinematic - Zoom Configuration
+#
+# This file controls per-attractor zoom multipliers and global zoom parameters.
+# Lines starting with # are comments.
+#
+# Usage: ./generate_video.sh -c attractor_config.example
+#    or: ./attractor_cinematic -c attractor_config.example -n 20 -f 300
+
+# ============================================================================
+# Per-Attractor Zoom Multipliers
+# ============================================================================
+# Higher values = zoom out more (attractor appears smaller on screen)
+# Lower values = zoom in more (attractor appears larger on screen)
+#
+# Each attractor has a different natural scale:
+#   - Aizawa/Thomas: Small attractors (range ~2 units)
+#   - Halvorsen: Medium attractor (range ~3-5 units)
+#   - Lorenz/Chen: Large attractors (range ~20-30 units)
+#
+# If an attractor looks too zoomed in (cut off), INCREASE its multiplier.
+# If an attractor looks too zoomed out (too small), DECREASE its multiplier.
+
+aizawa=0.8
+thomas=0.8
+lorenz=2.5
+halvorsen=2.0
+chen=3.5
+
+# ============================================================================
+# Global Zoom Parameters
+# ============================================================================
+
+# Screen fill factor: Controls how much of the screen the attractor fills.
+# Higher = zoom out more, Lower = zoom in more
+# Range: 0.01 to 1.0 (default: 0.07)
+screen_fill_factor=0.07
+
+# Minimum zoom scale (prevents extreme zoom-out)
+# Default: 60.0
+min_zoom=60.0
+
+# Maximum zoom scale (prevents extreme zoom-in)
+# Default: 2000.0
+max_zoom=2000.0
+
+# ============================================================================
+# Animation Effects (optional)
+# ============================================================================
+
+# Zoom oscillation amplitude: Creates a "breathing" effect
+# 0.0 = disabled, 0.12 = +/-12% oscillation per fragment
+# Default: 0.0 (disabled)
+zoom_oscillation=0.0
+
+# Dynamic adjustment range: Zooms based on particle velocity
+# 0.0 = disabled, 0.15 = +/-15% adjustment based on speed
+# Default: 0.0 (disabled)
+dynamic_adjustment=0.0
